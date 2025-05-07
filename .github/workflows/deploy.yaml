@@ -44,13 +44,13 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
+          token: ${{ secrets.GHA_TOKEN }}
 
       - name: Download chart artifacts
         uses: actions/download-artifact@v4
         with:
           name: packaged-charts
           path: new-charts
-          token: ${{ secrets.GHA_TOKEN }}
 
       - name: Update Helm repo index
         run: |
