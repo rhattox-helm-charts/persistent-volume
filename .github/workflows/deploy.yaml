@@ -50,6 +50,7 @@ jobs:
         with:
           name: packaged-charts
           path: new-charts
+          token: ${{ secrets.GHA_TOKEN }}
 
       - name: Update Helm repo index
         run: |
@@ -66,5 +67,3 @@ jobs:
           git add .
           git commit -m "Update Helm charts" || echo "No changes to commit"
           git push
-        env:
-          GH_TOKEN: ${{ secrets.GHA_TOKEN }}
