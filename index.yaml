@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  persistent-volume:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-05-07T20:55:03.211723155Z"
+    description: A Helm chart for Kubernetes
+    digest: 358a604d24b38177477740aa4f0fdd8f20e8f5b0765dfeae6b2ecaea77e3ca1e
+    name: persistent-volume
+    type: application
+    urls:
+    - https://rhattox-helm-charts.github.io/persistent-volume/persistent-volume-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-05-07T20:55:03.211379703Z"
