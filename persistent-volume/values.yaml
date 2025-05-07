@@ -1,0 +1,19 @@
+pv:
+  - name: example
+    enabled: false
+    capacity:
+      storage: 1Gi
+    persistentVolumeReclaimPolicy: Retain
+    accessModes:
+      - ReadWriteOnce
+    hostPath:
+      path: /mnt/example-pv
+
+pvc:
+  - name: example
+    enabled: false
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
