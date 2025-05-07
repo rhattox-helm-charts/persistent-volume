@@ -67,4 +67,4 @@ jobs:
           git commit -m "Update Helm charts" || echo "No changes to commit"
           git push
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GHA_TOKEN }}
