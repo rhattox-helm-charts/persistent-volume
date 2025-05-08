@@ -13,7 +13,6 @@ spec:
   resources:
     requests:
       storage: {{ .resources.requests.storage }}
-
 {{- end }}
 {{- end }}
 {{- end }}
