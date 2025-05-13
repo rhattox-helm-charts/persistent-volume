@@ -10,7 +10,8 @@ on:
       - argocd-application.yaml
       - docker-compose.yaml
       - README.md
-
+    tags:
+      - "*"
 jobs:
   ci:
     uses: rhattox-shared-actions/shared-actions/.github/workflows/helm-deploy.yaml@main
